@@ -1,0 +1,64 @@
+<head>
+    <link  rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
+    type="text/css">
+    <style>
+      h3{
+        color: white;
+        font-family: cursive;
+      }
+    </style>
+   
+
+ 
+
+
+      
+
+</head>
+<body>
+    <div class="ui fixed inverted menu">
+        <div class="ui container">
+
+            <div class="header item">Bus Reservation Website</div>
+        
+        <a href="/" class="item">
+          Home
+        </a>
+        <a href="/user" class="item">
+        Get your details
+        </a>
+      
+        
+        <a href="/booking/new" class="item">
+          New booking
+        </a>
+        <div class="right menu">
+          <%if(!currentuser){%>
+           
+        <a href="/login" class="item">
+          Your Bookings
+        </a>
+          <a href="/login" class="item">
+          Login</a>
+          <a href="/register" class="item">
+            Signup
+          </a>
+       <% } else{%>
+        
+        <a href="/bookings/<%=currentuser.id%>" class="item">
+          Your Bookings
+        </a>
+       <a href="#" class ="item">Welcome <%=currentuser.username %> </a>
+        <a href="/logout" class="item">
+          Logout</a>
+       <% }%>
+        </div>
+        
+              
+            </div>
+          </div>
+        </div>
+        </div>
+    </div>
+    <br><br><br>
+</body>

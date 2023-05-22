@@ -1,0 +1,42 @@
+<%- include('partials/header') %>
+
+<form class="ui form " action="/booking" method="POST">
+        
+    <label>Bus Name</label>
+    
+   <select name="bus" id="busb">
+       <%d.features.forEach(function(e) {%>
+    <option value="<%=e.properties.name%>"> <%=e.properties.name%></option>
+    <%})%>
+    </select>
+  <br><br>
+ 
+  <!-- <script>
+    var dept=document.getElementById("dept");
+    var arr=document.getElementById("arr");
+    function func(){
+      dept.textContent= e.properties.departure;
+      arr.textContent= e.properties.arrival;
+    }
+    document.getElementById("bus").onchange=func;
+  </script> -->
+
+
+ 
+    <label>Date</label>
+    <input type="date" name="date"  required><br><br>
+
+    <label>From</label>
+    <input type="text" name="from"  required><br><br>
+
+    <label>To</label>
+    <input type="text" name="to"  required><br><br>
+
+    <label>No of passengers</label>
+    <input type="number" name="num_ppl"  required><br><br>
+
+
+<input class="ui violet big basic button" type="submit" value="Book">
+</div>
+
+</form>

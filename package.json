@@ -1,0 +1,38 @@
+{
+  "name": "isaa-project",
+  "version": "1.0.0",
+  "engines": {
+    "node": "12.18.3"
+  },
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "alert": "^5.0.10",
+    "body-parser": "^1.19.0",
+    "ejs": "^3.0.2",
+    "express": "^4.17.1",
+    "express-rate-limit": "^5.5.1",
+    "express-session": "^1.17.2",
+    "express-validation": "^3.0.8",
+    "express-validator": "^6.13.0",
+    "mongodb": "^4.1.4",
+    "mongoose": "^6.0.23",
+    "nodemon": "^2.0.20",
+    "passport": "^0.6.0",
+    "passport-local": "^1.0.0",
+    "passport-local-mongoose": "^6.1.0"
+  },
+  "scripts": {
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aku134/ISAA-Project.git"
+  },
+  "author": "akshita",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aku134/ISAA-Project/issues"
+  },
+  "homepage": "https://github.com/aku134/ISAA-Project#readme"
+}

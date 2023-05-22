@@ -1,0 +1,15 @@
+<%- include('partials/header') %>
+
+<%f.reverse().forEach(function(s){%>
+    <p><%=s.bus%> </p>
+    <p><%=s.from%></p>
+    <p><%=s.to%></p>
+    <p><%=s.num_ppl%></p>
+    <p><%=s.date%></p>
+    <p><%s.dept%></p>
+    <p><%s.arr%></p>
+    <p><%=s.cost%></p>
+   
+    <form action="/bookings/<%=s._id%>?_method=DELETE" method="POST">
+        <button class="ui red basic button small">Cancel Booking</button></form>
+<%}) %>
